@@ -9,7 +9,7 @@ if number >= 0:
     if last_digit > 5:
         print('{}{} is {}{}'.format(last_str, number, last_digit, greater))
     elif last_digit == 0:
-        print("Last digit of {} is {} and is zero".format(number, last_digit))
+        print("Last digit of {} is {} and is 0".format(number, last_digit))
     elif last_digit < 6:
         print("{} {} is {} {}".format(last_str, number, last_digit, less_than))
 
@@ -19,6 +19,6 @@ elif number < 0:
     if last_digit > 5:
         print("{}{} is {}{}".format(last_str, number, last_digit, greater))
     if last_digit == 0:
-        print("Last digit of {} is {} and is zero".format(number, last_digit))
+        print("Last digit of {} is {} and is 0".format(number, last_digit))
     elif last_digit < 6:
         print("{} {} is {} {}".format(last_str, number, last_digit, less_than))
