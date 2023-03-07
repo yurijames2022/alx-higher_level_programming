@@ -5,3 +5,4 @@ for number in range(100):
         print("{0:02d}".format(number), end=', ')
     else:
         print("{0:02d}".format(number))
+        break
