@@ -21,4 +21,4 @@ elif number < 0:
     if last_digit == 0:
         print("Last digit of {} is {} and is 0".format(number, last_digit))
     elif last_digit < 6:
-        print("{} {} is {} {}".format(last_str, number, last_digit, less_than))
+        print("{}{} is {} {}".format(last_str, number, last_digit, less_than))
