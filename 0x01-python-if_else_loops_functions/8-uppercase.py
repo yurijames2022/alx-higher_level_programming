@@ -1,9 +1,10 @@
 #!/usr/bin/python3
 # A function that converts lowercase to uppercase
 def uppercase(str):
-    for character in str:
-        if 'a' <= character <= 'z':
-            print(chr(ord(character) - 32), end='')
+    str_len = len(str)
+    for ch in str:
+        if 'a' <= ch <= 'z':
+            print(chr(ord(ch)-32), end='' if str_len else '\n')
         else:
-            print(character, end='')
+            print("{}".format(ch), end='' if str_len else '\n')
     print()
