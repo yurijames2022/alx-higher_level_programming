@@ -1,4 +1,4 @@
 #!/usr/bin/python3
-zen = '''The Zen of Python, by Tim Peters'''
+zen = 'The Zen of Python, by TimPeters'
 
-print(zen)
+print(f"{zen}")
