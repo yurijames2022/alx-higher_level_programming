@@ -1,3 +1,3 @@
 #!/usr/bin/python3
-alphabt = 'abcdefghijklmnopqrstuvwxyz'
-print("{}".format(alphabt.upper()))
+import sys, string
+sys.stdout.write(getattr(string, 'ascii_uppercase') + '\n')
