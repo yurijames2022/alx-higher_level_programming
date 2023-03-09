@@ -1,11 +1,12 @@
 #!/usr/bin/python3
-import sys
+if __name__ == '__main__':
+    import sys
 # A program that prints the result of the addition of all arguments
+del sys.argv[0]
 len_args = len(sys.argv)
+arg_conv = 0
 result = 0
-j = 0
 for i in range(len_args):
-    if i != sys.argv[0]:
-        j = int(sys.argv[i])
-        result += j
+    arg_conv = int(sys.argv[i])
+    result += arg_conv
 print("{}".format(result))
