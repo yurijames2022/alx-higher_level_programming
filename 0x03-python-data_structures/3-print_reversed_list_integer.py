@@ -2,6 +2,7 @@
 # A function that prints all integers of a list
 # in reversed order
 def print_reversed_list_integer(my_list=[]):
-    my_list.reverse()
-    for i in my_list:
+    rev_list = my_list.copy()
+    rev_list.reverse()
+    for i in rev_list:
         print("{:d}".format(i))
