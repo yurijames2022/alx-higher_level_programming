@@ -1,7 +1,7 @@
 #!/usr/bin/python3
 # A function that finds the biggest integer of a list
 def max_integer(my_list=[]):
-    max_val = 0
+    max_val = -10000000000000000000000000000000000000
     if my_list == []:
         return None
     for i in my_list:
