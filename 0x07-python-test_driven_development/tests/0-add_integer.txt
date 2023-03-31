@@ -1,0 +1,21 @@
+>>> from add_integer import add_integer
+>>> add_integer(1, 2)
+3
+>>> add_integer(1.27, 2.333)
+3
+>>> add_integer(1.27, 9)
+10
+>>> add_integer(9, 1.89)
+10
+>>> add_integer("three", 9)
+Traceback (most recent call last):
+...
+TypeError: a must be an integer
+>>> add_integer(9, "four")
+Traceback (most recent call last):
+...
+TypeError: b must be an integer
+>>> add_integer(1)
+99
+>>> add_integer(-1, 1)
+0
