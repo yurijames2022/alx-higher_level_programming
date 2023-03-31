@@ -1,0 +1,19 @@
+>>> from say_my_name import say_my_name
+>>> say_my_name("James", "Yuri")
+My name is James Yuri
+>>> say_my_name("James", 1)
+Traceback (most recent call last):
+...
+TypeError: last_name must be a string
+>>> say_my_name(2, "Yuri")
+Traceback (most recent call last):
+...
+TypeError: first_name must be a string
+>>> say_my_name(2, 4)
+Traceback (most recent call last):
+...
+TypeError: first_name must be a string
+>>> say_my_name("james", "yuri", "mwangi")
+Traceback (most recent call last):
+...
+TypeError: say_my_name() takes from 1 to 2 positional arguments but 3 were given

@@ -4,6 +4,8 @@ It takes two arguments a and b and adds them
 The function can take only int and float data types
 Returns the sum of a and b
 '''
+
+
 def add_integer(a, b=98):
     '''Args:
     a: The first parameter
