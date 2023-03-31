@@ -1,4 +1,4 @@
->>> from say_my_name import say_my_name
+>>> from 3-say_my_name import say_my_name
 >>> say_my_name("James", "Yuri")
 My name is James Yuri
 >>> say_my_name("James", 1)
