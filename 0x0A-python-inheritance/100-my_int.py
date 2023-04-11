@@ -1,12 +1,14 @@
-#!/usr/bin/bash
-""" A class MyInt that inherits from int """
+#!/usr/bin/python3
+"""Defines a class MyInt that inherits from int."""
 
 
 class MyInt(int):
-    """ class MYInt that inherits from int """
+    """Invert int operators == and !=."""
 
-    def __eq__(self, other):
-        return int(self) != int(other)
+    def __eq__(self, value):
+        """swaps equal with not equal."""
+        return self.real != value
 
-    def __ne__(self, other):
-        return int(self) == int(other)
+    def __ne__(self, value):
+        """ Swap not equal to equal."""
+        return self.real == value
