@@ -1,12 +1,18 @@
-#!/usr/bin/bash
-'''
-A function that returns true if object is an instance of specified class
-'''
+#!/usr/bin/python3
+""" Function that checks for instance """
 
 
 def is_same_class(obj, a_class):
-    '''
-    A function that checks for instance
+    ''' Function that checks if obj is an instance of a_class
+
+    Args:
+    obj: The object
+    a_class: The class
+
+    Returns: Returns True if isinstance. False if not
     '''
 
-    return type(obj) is a_class
+    if type(obj) == a_class:
+        return True
+    else:
+        return False
