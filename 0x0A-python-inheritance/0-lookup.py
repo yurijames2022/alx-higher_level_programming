@@ -1,7 +1,7 @@
-#!/usr/bin/bash
-
-''' A function that returns the list of attributes and methods of an object '''
+#!/usr/bin/python3
+''' A function that returns attributes and objects available '''
 
 
 def lookup(obj):
+    ''' returns attributes and objects '''
     return dir((obj))
