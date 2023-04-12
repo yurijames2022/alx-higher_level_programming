@@ -22,8 +22,4 @@ def append_write(filename="", text=""):
     with open(filename, "a", encoding="utf-8") as f:
         f.write(text)
 
-    with open(filename, "r", encoding="utf-8") as f:
-        for line in f:
-            charCount += len(line)
-
-    return charCount
+    return len(text)
