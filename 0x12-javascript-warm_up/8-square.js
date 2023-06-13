@@ -1,11 +1,10 @@
 #!/usr/bin/node
-const mySize = parseInt(process.argv[2]);
-let i = 0;
-if (!mySize) {
+const size = parseInt(process.argv[2]);
+if (!size) {
   console.log('Missing size');
 } else {
-  while (i < mySize) {
-    console.log('X');
-    i++;
+  const x = 'X'.repeat(size);
+  for (let i = 0; i < size; i++) {
+    console.log(x);
   }
 }
