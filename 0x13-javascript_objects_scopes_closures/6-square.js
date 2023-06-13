@@ -1,9 +1,8 @@
 #!/usr/bin/node
-const BigSquare = require('./5-square');
-module.exports = class Square extends BigSquare {
+module.exports = class Square extends require('./5-square') {
   charPrint (c) {
-    if (!c) {
-      super.print();
+    if (c === undefined) {
+      this.print();
     } else {
       const ch = c.repeat(this.size);
       for (let i = 0; i < this.size; i++) {
