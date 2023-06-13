@@ -17,12 +17,14 @@ module.exports = class Rectangle {
   }
 
   rotate () {
-    this.width = this.height;
-    this.height = this.width;
+    const w = this.width;
+    const h = this.height;
+    this.width = h;
+    this.height = w;
   }
 
   double () {
-    this.width = this.width * 2;
-    this.height = this.width * 2;
+    this.width = (this.width * 2);
+    this.height = (this.width * 2);
   }
 };
