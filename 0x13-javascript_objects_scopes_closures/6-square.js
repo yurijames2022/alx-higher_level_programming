@@ -1,8 +1,14 @@
 #!/usr/bin/node
-module.exports = class Square extends require('./5-square') {
+const Rectangle = require('./4-rectangle');
+module.exports = class Square extends Rectangle {
+  constructor (size) {
+    super(size, size);
+    this.size = size;
+  }
+
   charPrint (c) {
-    if (c === undefined) {
-      this.print();
+    if (!c) {
+      super.print();
     } else {
       const ch = c.repeat(this.size);
       for (let i = 0; i < this.size; i++) {
