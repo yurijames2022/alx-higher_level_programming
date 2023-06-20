@@ -1,6 +1,6 @@
 #!/usr/bin/python3
 '''
-A script that prints the first state object
+A script that prints the State object with the name passed as argument
 '''
 from sys import argv
 from sqlalchemy import create_engine
@@ -15,8 +15,8 @@ if __name__ == '__main__':
     Base.metadata.create_all(engine)
     Session = sessionmaker(bind=engine)
     session = Session()
-    first_state = session.query(State).first()
-    if first_state:
-        print('{}: {}'.format(first_state.id, first_state.name))
+    state = session.query(State).filter(State.name == argv[4]).all()
+    if state:
+        print(state[0].id)
     else:
-        print('Nothing')
+        print('Not found')

@@ -1,6 +1,6 @@
 #!/usr/bin/python3
 '''
-A script that prints the first state object
+A script that prints the state objects with 'a' in their name
 '''
 from sys import argv
 from sqlalchemy import create_engine
